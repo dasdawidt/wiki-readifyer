@@ -2,7 +2,7 @@
 showExtensionState();
 
 //let the user change the state by clicking the icon
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.action.onClicked.addListener(function(tab) {
 	switchExtensionState();
 });
 
@@ -22,12 +22,12 @@ function switchExtensionState() {
 function showExtensionState() {
 	chrome.storage.sync.get('state', function(data) {
 		if (data.state === 'on') {
-			chrome.browserAction.setIcon({path: {
+			chrome.action.setIcon({path: {
 					"128": "images/enabled_128.png"
 				}
 			});
 		} else {
-			chrome.browserAction.setIcon({path: {
+			chrome.action.setIcon({path: {
 					"128": "images/disabled_128.png"
 				}
 			});
