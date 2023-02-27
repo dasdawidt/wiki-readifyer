@@ -1,14 +1,16 @@
 //show current state on start
-showExtensionState();
+chrome.runtime.onStartup.addListener(() => {
+    showExtensionState();
+})
 
 //let the user change the state by clicking the icon
-chrome.action.onClicked.addListener(function(tab) {
+chrome.action.onClicked.addListener((tab) => {
 	switchExtensionState();
 });
 
 //switch the extension state
 function switchExtensionState() {
-	chrome.storage.sync.get('state', function(data) {
+	chrome.storage.sync.get('state', (data) => {
 		if (data.state === 'on') {
 			chrome.storage.sync.set({state: 'off'});
 		} else {
@@ -20,7 +22,7 @@ function switchExtensionState() {
 
 //show the state by changing the icon
 function showExtensionState() {
-	chrome.storage.sync.get('state', function(data) {
+	chrome.storage.sync.get('state', (data) => {
 		if (data.state === 'on') {
 			chrome.action.setIcon({path: {
 					"128": "images/enabled_128.png"

@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Wiki Readifyer",
     "short_name": "Wiki Readifyer",
-    "version": "1.4.2",
+    "version": "1.4.3",
     "description": "Makes Wikipedia articles pleasantly readable. Nothing more. Nothing less.",
     "author": "David Maier",
     "incognito": "split",
