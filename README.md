@@ -6,6 +6,10 @@ Get it on the [Chrome Web Store](https://chrome.google.com/webstore/detail/wiki-
 
 ## Changelog
 
+### 1.4.4
+
+- Removed unneccesary host-permission
+
 ### 1.4.3
 
 - Added automatic detection of themes to avoid inteferance
