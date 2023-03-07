@@ -8,7 +8,8 @@ Get it on the [Chrome Web Store](https://chrome.google.com/webstore/detail/wiki-
 
 ### 1.4.4
 
-- Removed unneccesary host-permission
+- Removed unnecessary host-permission
+- Corrected z-indices on heading and table of contents to not interfer with edit-toolbar
 
 ### 1.4.3
 
