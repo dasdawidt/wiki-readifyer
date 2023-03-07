@@ -65,7 +65,7 @@
         display: none;
     }
     .mw-body .mw-indicators {
-        z-index: 1001;
+        /* z-index: 1001; Removed as a test. */
     }
     #p-search {
         margin-right: 0;
@@ -97,7 +97,7 @@
         min-width: min-content;
         overflow-y: auto;
         overflow-x: hidden;
-        z-index: 1010;
+        z-index: 2; /* 2 So that it is displayed above the content at the smallest breakpoint. */
     }
     #toc.tochidden {
         height: auto;
@@ -139,7 +139,7 @@
         padding-bottom: 0.125em;
         top: 0;
         background-color: var(--color-background);
-        z-index: 1000;
+        z-index: 1; /* Needs to be 1 beacuse menu in edit-mode has 2. */
     }
     p {
         text-align: left;

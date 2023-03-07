@@ -6,6 +6,11 @@ Get it on the [Chrome Web Store](https://chrome.google.com/webstore/detail/wiki-
 
 ## Changelog
 
+### 1.4.4
+
+- Removed unnecessary host-permission
+- Corrected z-indices on heading and table of contents to not interfer with edit-toolbar
+
 ### 1.4.3
 
 - Added automatic detection of themes to avoid inteferance
