@@ -7,6 +7,8 @@ Get it on the [Chrome Web Store](https://chrome.google.com/webstore/detail/wiki-
 ## Contents
 
 1. [Why use Wiki Readifyer?](#why-use-wiki-readifyer)
+1. [Features](#features)
+1. [Limitations](#limitations)
 1. [Changelog](#changelog)
 1. [License](#license)
 
@@ -16,6 +18,11 @@ Have you ever tried to read an Wikipedia article, trying to gain knowledge but t
 Well, worry no more! Wiki Readifyer makes the knowledge you are searching for pleasantly readable. The wisdom you desire to read is just one installation away!
 And the best thing: It doesn't remove anything from the page it only changes the layout while staying 100% faithful* to the original contents.
 
+*However, if the window width is too small the extension will hide the left sidebar, only to guarantee the best use of your precious screen space.
+To make it visible again, just make the window wider.
+
+## Features
+
 The following changes are applied to guarantee the best possible experience:
 - responsive layout: articles are pleasantly readable at any window size
 - slight reduction of text-background-contrast
@@ -24,12 +31,11 @@ The following changes are applied to guarantee the best possible experience:
 - the title also stays visible when scrolling down
 - some other little adjustments
 
-*However, if the window width is too small the extension will hide the left sidebar, only to guarantee the best use of your precious screen space.
-To make it visible again, just make the window wider.
+## Limitations
 
-In 2023, many Wikipedias changed their default theme to Vector 2022, a more modern and user-friendly theme.
-Wiki Readifyer does not touch Wikipedia's layout if any theme other than the old (legacy) Vector theme is active.
-This means, to get the advertised layouts on Wikipedias that use the new theme, you have to turn off the new skin.
+In 2023, many Wikipedias changed their default theme to [Vector 2022](https://en.wikipedia.org/wiki/Wikipedia:Vector_2022), a more modern and user-friendly theme.
+Wiki Readifyer does not touch Wikipedia's layout if any theme other than the old Vector theme is active.
+This means, to get the advertised layouts on Wikipedias with the new theme, you have to turn off the new skin using one of the methods described [here](https://en.wikipedia.org/wiki/Wikipedia:Vector_2022#How_to_turn_off_the_new_skin).
 
 ## Changelog
 
