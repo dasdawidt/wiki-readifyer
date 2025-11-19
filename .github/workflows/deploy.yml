@@ -1,0 +1,35 @@
+name: Release
+run-name: 'Release "${{ github.ref_name }}" #${{ github.run_attempt }}'
+
+on:
+    push:
+        tags:
+            - 'v*.*.*'
+
+jobs:
+    deploy:
+        name: Deploy
+        runs-on: ubuntu-latest
+        if: "${{ github.ref == 'refs/heads/main' && !startsWith(github.event.head_commit.message, 'dev') && !startsWith(github.event.head_commit.message, 'docs') }}"
+        permissions:
+            actions: write
+
+        steps:
+            - name: Download artifact
+              uses: dawidd6/action-download-artifact@v11
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  workflow: build.yml
+                  workflow_conclusion: success
+                  name: release-files
+                  path: ./release
+
+            - name: Publish to Chrome Web Store
+              uses: mobilefirstllc/cws-publish@2.1.1
+              with:
+                  action: 'publish'
+                  client_id: ${{ secrets.CLIENT_ID }}
+                  client_secret: ${{ secrets.CLIENT_SECRET }}
+                  refresh_token: ${{ secrets.REFRESH_TOKEN }}
+                  extension_id: ${{ vars.EXTENSION_ID }}
+                  zip_file: ./release/*.zip
