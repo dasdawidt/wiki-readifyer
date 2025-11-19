@@ -1,3 +1,5 @@
+/** biome-ignore-all lint/complexity/noImportantStyles: Does not work any other way. */
+
 @media only screen {
     :root {
         --color-background: #f6f6f6;
@@ -16,27 +18,35 @@
         --head-margin-top: 4.75em;
         --page-margin-top: 0.5em;
     }
+
     body {
         background-color: var(--color-background);
     }
-    #left-navigation, #right-navigation {
+
+    #left-navigation,
+    #right-navigation {
         margin-top: var(--head-margin-top);
     }
+
     #left-navigation {
         margin-left: 0;
     }
+
     #p-personal ul {
         padding-left: 0;
         float: right;
     }
+
     #p-personal {
         top: unset;
         right: unset;
-        width: calc(100% - 2*var(--padding-sides));
+        width: calc(100% - 2 * var(--padding-sides));
     }
+
     #pt-notifications-notice {
         height: 5em;
     }
+
     #mw-head {
         clear: left;
         left: 0;
@@ -44,32 +54,40 @@
         margin-left: var(--margin-left);
         margin-right: var(--margin-right);
         padding-right: var(--padding-sides);
-        padding-left: var(--padding-sides);;
+        padding-left: var(--padding-sides);
         width: var(--content-width);
     }
+
     #mw-head.ul {
         background-color: var(--color-background);
     }
+
     #mw-panel {
         height: auto;
-        padding-left: 0;        
+        padding-left: 0;
     }
+
     #mw-panel .portal .body {
         background-image: none;
-        border-top: 0.5px solid #bfbfbf; 
+        border-top: 0.5px solid #bfbfbf;
     }
+
     #mw-panel #p-logo + .portal .body {
         border-top: none;
     }
+
     #mw-page-base {
         display: none;
     }
+
     .mw-body .mw-indicators {
         /* z-index: 1001; Removed as a test. */
     }
+
     #p-search {
         margin-right: 0;
     }
+
     #content {
         width: var(--content-width);
         margin-top: var(--margin-top);
@@ -81,9 +99,11 @@
         padding-left: var(--padding-sides);
         border: none;
     }
+
     #content table {
         text-align: left;
     }
+
     #toc {
         background-color: var(--color-background-light);
         padding: 1em;
@@ -97,73 +117,91 @@
         min-width: min-content;
         overflow-y: auto;
         overflow-x: hidden;
-        z-index: 2; /* 2 So that it is displayed above the content at the smallest breakpoint. */
+        z-index: 2;
+        /* 2 So that it is displayed above the content at the smallest breakpoint. */
     }
+
     #toc.tochidden {
         height: auto;
     }
+
     .toc h2 {
         padding: 0;
     }
+
     .vector-menu-tabs li {
         background-image: none;
     }
+
     .vector-menu-tabs a {
         background-image: none;
     }
+
     .vector-menu-tabs {
         background-image: none;
     }
+
     .vector-menu-tabs .selected {
         background-color: transparent;
         border-bottom: 1px solid black;
     }
+
     .vector-menu .menu {
         background-color: var(--color-background-light);
         box-shadow: var(--drop-shadow);
         border: none;
     }
-    .vector-menu-tabs a, #mw-head .vector-menu h3 {
+
+    .vector-menu-tabs a,
+    #mw-head .vector-menu h3 {
         background-image: none;
     }
+
     .vector-menu-dropdown:hover {
         background-color: var(--color-background-spotlight);
     }
+
     .vector-menu-dropdown:hover .vector-menu-content {
         background-color: var(--color-background-spotlight) !important;
         border: none !important;
     }
+
     #firstHeading {
         position: sticky;
         padding-top: 0.125em;
         padding-bottom: 0.125em;
         top: 0;
         background-color: var(--color-background);
-        z-index: 1; /* Needs to be 1 beacuse menu in edit-mode has 2. */
+        z-index: 1;
+        /* Needs to be 1 beacuse menu in edit-mode has 2. */
     }
+
     p {
         text-align: left;
         font-size: 1.125em;
     }
+
     .gallerytext p {
         text-align: left;
     }
+
     #footer {
         margin-right: var(--margin-right);
         margin-left: var(--margin-left);
         padding: var(--padding-sides);
         width: var(--content-width);
     }
+
     #footer-icons {
         float: left;
     }
+
     #footer-icons li:first-of-type {
         margin-left: 0;
     }
 }
 
 @media only screen and (max-width: 1600px) {
-
     /* LARGE: Content justified left */
 
     :root {
@@ -172,24 +210,24 @@
 }
 
 @media only screen and (max-width: 1420px) {
-
     /* MEDIUM: Left sidebar is hidden */
 
     :root {
         --margin-left: 0;
     }
+
     #mw-panel {
         display: none;
     }
 }
 
 @media only screen and (max-width: 1220px) {
-
     /* SMALL: TOC is hovering */
 
     :root {
         --margin-right: 0;
     }
+
     #toc {
         top: unset;
         bottom: 1em;
@@ -199,7 +237,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-
     /* TINY: Content is full width*/
 
     :root {

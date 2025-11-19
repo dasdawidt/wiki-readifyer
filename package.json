@@ -1,0 +1,26 @@
+{
+    "name": "wiki-readifyer",
+    "version": "1.4.4",
+    "description": "Makes Wikipedia articles pleasantly readable. Nothing more. Nothing less.",
+    "author": {
+        "name": "David Maier"
+    },
+    "type": "module",
+    "scripts": {
+        "check": "biome check --write .",
+        "ci": "biome ci .",
+        "typecheck": "tsc -noEmit",
+        "build": "rollup -c",
+        "dev": "rollup -c -w"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.3.5",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^12.3.0",
+        "@types/chrome": "^0.1.28",
+        "rollup": "^4.53.2",
+        "rollup-plugin-chrome-extension": "^3.6.15",
+        "rollup-plugin-zip": "^1.0.3",
+        "typescript": "^5.9.3"
+    }
+}

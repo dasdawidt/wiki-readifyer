@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "biomejs.biome",
+        "bashmish.es6-string-css",
+        "ecmel.vscode-html-css",
+        "editorconfig.editorconfig",
+        "Tobermory.es6-string-html",
+        "zjcompt.es6-string-javascript"
+    ]
+}
